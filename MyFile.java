@@ -105,15 +105,24 @@ public class MyFile {
                 } else if (permissions.charAt(0) == '-') {
                     file.setReadable(false);
                 }
+                else {
+                    System.out.println("Неверный аргумент."); 
+                }
                 if (permissions.charAt(1) == 'w') {
                     file.setWritable(true);
                 } else if (permissions.charAt(1) == '-') {
                     file.setWritable(false);
                 }
+                else {
+                    System.out.println("Неверный аргумент."); 
+                }
                 if (permissions.charAt(2) == 'x') {
                     file.setExecutable(true);
                 } else if (permissions.charAt(2) == '-') {
                     file.setExecutable(false);
+                }
+                else {
+                    System.out.println("Неверный аргумент."); 
                 }
             } catch (Exception e) {
                 e.printStackTrace();
