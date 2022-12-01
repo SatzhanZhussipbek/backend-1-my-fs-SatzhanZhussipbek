@@ -48,6 +48,12 @@ public class Main {
             if (input.contains("help")) {
                 MyFile.help();
             }
+            else if (!input.contains("ls") && !input.contains("ls_py") && !input.contains("exit") &&
+                    !input.contains("is_dir") && !input.contains("help") && !input.contains("define")
+            && !input.contains("readmod") && !input.contains("setmod") && !input.contains("cat") &&
+                    !input.contains("append") && !input.contains("bc") && !input.contains("greplong")) {
+                System.out.println("Неверная команда! Попробуйте снова.");
+            }
         }
 
 
