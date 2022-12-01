@@ -30,7 +30,7 @@ public class Main {
                 MyFile.printPermissions(input.substring(8));
             }
             if (input.contains("setmod")) {
-                MyFile.setPermissions(input.substring(7),
+                MyFile.setPermissions(input.substring(7, input.length()-4),
                         input.substring(input.length()-3));
             }
             if (input.contains("cat")) {
